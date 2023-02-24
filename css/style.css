@@ -1,289 +1,325 @@
 body {
-    background:#eee;
-    font-family: 'Asap', sans-serif;
+  background: #eee;
+  font-family: "Asap", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    padding-left:250px;
-    background:#fff;
-    box-shadow:0 0 5px rgba(0,0,0,.1);
+  width: 90%;
+  margin: auto;
+  padding-left: 250px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .header {
-    float: left;
-    margin-left: -250px;
-    width: 250px;
-    background: #f5f5f5;
-    border-right: 1px solid rgba(0,0,0,.1);
-    height: 100vh;
-    position: sticky;
-    top: 0;
+  float: left;
+  margin-left: -250px;
+  width: 250px;
+  background: #f5f5f5;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.header-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;    
+}
+
+.image {
+    width: 100%;
+    padding: 1.5rem;
 }
 
 .search {
-    padding: 1rem;
-    background: #f39c12;
+  padding: 1rem;
+  background: lightskyblue;
 }
 
 .search-input {
-    padding: .75rem 1rem;
-    border: none;
-    font-size:1.2em;
-    width:100%;
-    border-radius:2rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 2rem;
 }
 
 .title {
-    font-size: 2em;
-    font-weight: bold;
-    border-bottom:3px solid #f39c12;
-    padding-bottom:1rem;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 3px solid lightskyblue;
+  padding-bottom: 1rem;
 }
 
 .nav {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .nav-links {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .nav-item {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding: 0.4rem;
-    background-color: lightgrey;
-    margin: 0.2rem;
-    border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  background-color: lightgrey;
+  margin: 0.2rem;
+  border-radius: 5px;
 }
 
 .nav-item:hover {
-    background-color: orange;
+  background-color: lightskyblue;
 }
 
 .nav-item:first-child {
-    border-bottom: 1px solid orange;
+  border-bottom: 1px solid lightskyblue;
+}
+
+.ben-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border: 2px solid lightskyblue;
 }
 
 .page {
-    padding: 5rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+    width: 50%;
+}
+
+.paragraph {
+    line-height: 1.5rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.content__paragraph {
+    padding: 1rem;
+    line-height: 1.2rem;
 }
 
 .content-focus {
-    border-bottom: 3px solid #ccc;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .content-titles {
-    width: 50%;
-    font-size: 3em;
-    font-weight: bold;
-    margin-right: 2rem;
+  width: 50%;
+  font-size: 3em;
+  font-weight: bold;
+  margin-right: 2rem;
 }
 
 .content-title--main {
-    font-size: 2.5rem;
-    text-align: right;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    border-top: 2px solid orange;
+  font-size: 2.5rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 2px solid orange;
 }
 
 .content-title--sub {
-    font-size: 2rem;
-    color: grey;
-    text-align: right;
-    padding-left: 5rem;
+  font-size: 2rem;
+  color: grey;
+  text-align: right;
+  padding-left: 5rem;
 }
 
 .content-title {
-    max-width: 450px;
-    margin-left: auto;
+  max-width: 450px;
+  margin-left: auto;
 }
 
 .content-picture {
-    width: 50%;
-    position: relative;
+  width: 50%;
+  position: relative;
 }
 
 .rounded {
-    border-radius: 10px;
-    overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .picture {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .picture-desc {
-    background-color: rgba(0, 0, 0, 0.26);
-    color: white;
-    padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.26);
+  color: white;
+  padding: 0.3rem;
 }
 
 .content-quote {
-    border-top: 3px solid #ccc;
-    margin-top: 2rem;
+  border-top: 3px solid #ccc;
+  margin-top: 2rem;
 }
 
 .content p {
-    font-size: 1.1em;
-    line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 .content h3 {
-    font-size: 1.7em;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .content ol {
-    list-style-type: decimal;
-    font-size: 1.1em;
-    margin-left: 1.5em;
-    line-height: 1.5;
+  list-style-type: decimal;
+  font-size: 1.1em;
+  margin-left: 1.5em;
+  line-height: 1.5;
 }
 
 .articles {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .articles-container {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card {
-    margin-bottom: 2rem;
-    width: 50%;
-    padding: 0.5rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  padding: 0.5rem;
 }
 
 .card-title {
-    margin: 2rem 1rem;
-    font-size: 1.7em;
-    font-weight: bold;
+  margin: 2rem 1rem;
+  font-size: 1.7em;
+  font-weight: bold;
 }
 
 .card-content {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .card-content p {
-    font-size: 1.1em;
-    line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 .card-footer {
-    margin: 2rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .btn {
-    padding: 1rem 2rem;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #f39c12;
-    border: 2px solid #f39c12;
-    border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f39c12;
+  border: 2px solid #f39c12;
+  border-radius: 30px;
 }
 
 .btn:hover {
-    background-color: #f39c12;
-    color: white;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #f39c12;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .footer {
-    background: #111;
-    padding: 4rem 2rem;
-    text-align: center;
-    color: #aaa;
+  background: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #aaa;
 }
 
 @media screen and (max-width: 1200px) {
-    .content-focus {
-        display:block;
-    }
+  .content-focus {
+    display: block;
+  }
 
-    .content-titles {
-        width: auto;
-        text-align: center;
-        margin-right: 0;
-    }
+  .content-titles {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+  }
 
-    .content-title {
-        max-width: none;
-    }
+  .content-title {
+    max-width: none;
+  }
 
-    .content-picture {
-        width: auto;
-    }
+  .content-picture {
+    width: auto;
+  }
 
-    .articles-container {
-      
-        display:block;
-    }
-    .card {
-        width:auto;
-    }
+  .articles-container {
+    display: block;
+  }
+  .card {
+    width: auto;
+  }
 }
-
-
-
 
 @media screen and (max-width: 900px) {
-.header {
-        position:static;
-        width:auto;
-        float:none;
-        margin-left:0;
-    }
+  .header {
+    position: static;
+    width: auto;
+    float: none;
+    margin-left: 0;
+    height: auto;
+  }
 
-    .container {
-        width:96%;
-        padding-left:0;
-    }
+  .container {
+    width: 96%;
+    padding-left: 0;
+  }
 
-    .page {
-        padding: 0 1rem;
-    }
+  .page {
+    padding: 0 1rem;
+  }
 
-    .nav {
-        padding: 1rem;
-    }
+  .nav {
+    padding: 1rem;
+  }
 
-    .nav .title {
-        display:none;
-    }
+  .nav .title {
+    display: none;
+  }
 
-    .nav-links {
-        margin-top:0;
-        display: flex;
-    }
+  .nav-links {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .nav-item {
-        width:calc(33.3333% - .5rem);
-        text-align: center;
-        width: 100%;
-    }
+  .nav-item {
+    width: calc(33.3333% - 0.5rem);
+    text-align: center;
+    width: 100%;
+  }
 
-    .nav-item-link {
-        margin-bottom: 0;
-    }
-
+  .nav-item-link {
+    margin-bottom: 0;
+  }
 }
-    
